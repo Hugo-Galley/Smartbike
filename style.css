@@ -98,3 +98,81 @@ h1 {
 iframe{
     margin-left: 30%;
 }
+#descriptif{
+    display: inline-flex;
+    flex-direction: column;
+    margin-left: 5%;
+}
+#photo-produits{
+    -webkit-box-shadow: 10px 0px 15px 4px rgba(104,82,94,0.68); 
+box-shadow: 10px 0px 15px 4px rgba(104,82,94,0.68);
+    display: inline-block;
+    background-color: red;
+    width: 500px;
+    height: 500px;
+    margin-left: 10%;
+    border-radius: 10px;
+}
+#titre-produits{
+    display: inline-block;
+    background-color: rgb(255, 0, 255);
+    width: 200px;
+    height: 40px;
+    margin-bottom: 5%;
+    border-radius: 5px;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    text-align: center;
+    -webkit-box-shadow: 10px 0px 15px 4px rgba(104,82,94,0.68); 
+box-shadow: 10px 0px 15px 4px rgba(104,82,94,0.68);
+}
+#prix-produits{
+    display: inline-block;
+    background-color: rgb(30, 0, 255);
+    width: 200px;
+    height: 40px;
+    margin-bottom: 5%;
+    border-radius: 5px;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    text-align: center;
+    -webkit-box-shadow: 10px 0px 15px 4px rgba(104,82,94,0.68); 
+box-shadow: 10px 0px 15px 4px rgba(104,82,94,0.68);
+}
+#description-produits{
+    display: inline-block;
+    background-color: rgb(246, 255, 0);
+    width: 400px;
+    height: 300px;
+    margin-bottom: 5%;
+    border-radius: 5px;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    text-align: center;
+    -webkit-box-shadow: 10px 0px 15px 4px rgba(104,82,94,0.68); 
+box-shadow: 10px 0px 15px 4px rgba(104,82,94,0.68);
+}   
+#bouton-commander{
+    display: inline-block;
+    background-color: rgb(0, 255, 38);
+    width: 200px;
+    height: 40px;
+    margin-bottom: 5%;
+    border-radius: 5px;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    text-align: center;
+    -webkit-box-shadow: 10px 0px 15px 4px rgba(104,82,94,0.68); 
+box-shadow: 10px 0px 15px 4px rgba(104,82,94,0.68);
+}
+#avis-produits{
+    display: block;
+    background-color: rgb(162, 0, 255);
+    margin-top: 5%;
+    border-radius: 5px;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    text-align: center;
+    -webkit-box-shadow: 10px 0px 15px 4px rgba(104,82,94,0.68); 
+box-shadow: 10px 0px 15px 4px rgba(104,82,94,0.68);
+}
