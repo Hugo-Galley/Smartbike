@@ -83,3 +83,7 @@ button {
 button:hover {
     background-color: #0056b3;
 }
+h1 {
+    font-size: 36px; 
+    text-align: center;
+}
