@@ -65,6 +65,11 @@ textarea {
     border-radius: 3px;
     font-size: 16px;
 }
+input[type="text"],
+input[type="email"],
+textarea::hover {
+    background-color: #0056b3;
+}
 
 textarea {
     height: 100px;
