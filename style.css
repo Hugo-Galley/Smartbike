@@ -9,6 +9,8 @@ body{
 nav{
     float: right;
     display: flex;
+    margin-right: 2%;
+    margin-top: 1%;
 
 }
 nav li {
@@ -22,13 +24,14 @@ a {
     text-decoration: none;
     color: black;
 }
+#marque{
+    font-size: 4em;
+}
 .presentation{
 
     display: flex;
     text-align: center;
     align-items: center;
-
-    margin-top: 8%;
 }
 #velo1{
     width: 40%;
