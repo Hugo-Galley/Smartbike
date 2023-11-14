@@ -153,6 +153,7 @@ box-shadow: 10px 0px 15px 4px rgba(104,82,94,0.68);
 #description-produits{
     width: 400px;
     height: 300px;
+    overflow: auto;
 }   
 #bouton-commander{
     width: 200px;
@@ -173,6 +174,7 @@ box-shadow: 10px 0px 15px 4px rgba(104,82,94,0.68);
     display: inline-flex;
     width: 300px;
     height: 300px;
+    border-radius: 20px;
 }
 .appercu-velo span {
     margin-left: 9%;

@@ -23,7 +23,7 @@
             </ul>
         </nav>
     </header>
-    <main action="contact.php"class="contact">
+    <main action="contact.php" method='POST' class="contact">
         <div id="contact-page">
             <form action="contact.php" method="post">
                 <div class="form-group">
@@ -59,8 +59,7 @@
     $stmt->bindParam(':prenom', $prenom);
     $stmt->bindParam(':message', $message);
     $stmt->bindParam(':email', $email);
-    $statu = $stmt->execute();
-    
+
     }
     catch(PDOException $e){
         echo''. $e->getMessage();
