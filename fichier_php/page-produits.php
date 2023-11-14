@@ -25,7 +25,7 @@
 include("bdd.php");
 $choice = $_GET['id_velos'];
 $bdd = new PDO("mysql:host=$host;dbname=$database", $user, $mdp);
-$produits = $bdd->query("SELECT * FROM velos WHERE id_velos = $choice")->fetch(PDO::FETCH_ASSOC);
+$produits = $bdd->query("SELECT * FROM velos WHERE id_velos = $choice")->fetchAll();
 
 // Vos lignes de code PHP pour récupérer les données ici...
 
