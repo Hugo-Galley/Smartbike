@@ -3,27 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Dosis&family=Lobster&family=Lora:ital,wght@0,500;1,500&family=Open+Sans&family=Playfair+Display:ital@1&display=swap" rel="stylesheet"
-> <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Agbalumo&family=Roboto+Mono:wght@500&display=swap" rel="stylesheet">
     <title>À Propos de SmartBike</title>
 
 </head>
 <body>
     </html>
     <header>
-        
-        
-            <a href="index.html"><img src="items/logo.png" alt="logo site" id="logo"></a>
-                
-                <nav>
-                    <ul>
-                        <li><a href="">Nos vélo</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                        <li><a href="apropos.html">A Propos</a></li>
-                    </ul>
-                </nav>
-
+        <?php
+        include("header.php");
+        ?>
     </header>
 
     <section>

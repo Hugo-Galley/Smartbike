@@ -1,25 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="../style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Dosis&family=Lobster&family=Lora:ital,wght@0,500;1,500&family=Open+Sans&family=Playfair+Display:ital@1&display=swap" rel="stylesheet">
-    <title>Acceuil</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Agbalumo&family=Roboto+Mono:wght@500&display=swap" rel="stylesheet">  <title>Acceuil</title>
 </head>
 <body>
 <header>
-    <a href="index.html"><img src="items/logo.png" alt="logo site" id="logo"></a>
-        
-        <nav>
-            <ul>
-                <li><a href="">Nos vélo</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="apropos.html">A Propos</a></li>
-            </ul>
-        </nav>
+    <?php
+        include("header.php");
+        ?>
 </header>
     <main>
         <h1 id="marque">SmartBike</h1>
