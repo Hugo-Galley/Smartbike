@@ -22,7 +22,7 @@
         </nav>
     </header>
     <main>
-        <h2 id='titre-market'>Nos vélos Prposé à la Vente</h2>
+        <h2 id='titre-market'>Nos vélos Proposé à la Vente</h2>
         <div class="appercu-velo">
         <?php
 include("bdd.php");
