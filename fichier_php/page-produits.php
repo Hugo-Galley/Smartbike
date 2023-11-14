@@ -35,7 +35,7 @@ echo "<div id='descriptif'>";
 echo "<span id='titre-produits'><p>" . $produits['nom'] . "</p></span>";
 echo "<h2 id='prix-produits'>" . $produits['prix'] . "€</h2>";
 echo "<p id='description-produits'>" . $produits['description'] . "</p>";
-echo "<button id='bouton-commander'>Commander</button>";
+echo "<a href='commander.php'><button>Commander</button></a>";
 echo "</div>";
 echo "</div>";
 echo "<h2 id='titre-avis'> Les avis que nos clients nous on laissé</h2>";
