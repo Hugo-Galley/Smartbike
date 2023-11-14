@@ -27,6 +27,15 @@ a {
 #marque{
     font-size: 4em;
 }
+header{
+    border: 4px solid black;
+    background-color: aliceblue;
+    border-radius: 5px;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    -webkit-box-shadow: 10px 0px 15px 4px rgba(104,82,94,0.68); 
+box-shadow: 10px 0px 15px 4px rgba(104,82,94,0.68);
+}
 .presentation{
 
     display: flex;
@@ -86,6 +95,7 @@ button {
     border-radius: 3px;
     font-size: 16px;
     cursor: pointer;
+    margin-top: 5%;
 }
 
 button:hover {
@@ -97,4 +107,87 @@ h1 {
 }
 iframe{
     margin-left: 30%;
+}
+.produit-container {
+    display: flex;
+    margin-top: 5%;
+}
+
+#photo-produits {
+    -webkit-box-shadow: 10px 0px 15px 4px rgba(104, 82, 94, 0.68);
+    box-shadow: 10px 0px 15px 4px rgba(104, 82, 94, 0.68);
+    width: 500px;
+    height: 500px;
+    margin-left: 10%;
+    border-radius: 10px;
+}
+
+#descriptif {
+
+    display: inline-flex;
+    flex-direction: column;
+    margin-left: 5%;
+}
+#titre-produits,#prix-produits,#description-produits
+,#bouton-commander,#avis-produits,input,textarea{
+    display: inline-block;
+    border: 2px solid rgb(14, 112, 197);
+    margin-bottom: 5%;
+    border-radius: 5px;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    text-align: center;
+    -webkit-box-shadow: 10px 0px 15px 4px rgba(104,82,94,0.68); 
+box-shadow: 10px 0px 15px 4px rgba(104,82,94,0.68);
+}
+
+#titre-produits{
+    width: 200px;
+    height: 40px;
+    overflow: auto;
+    
+}
+#prix-produits{
+    width: 200px;
+    height: 40px;
+}
+#description-produits{
+    width: 400px;
+    height: 300px;
+}   
+#bouton-commander{
+    width: 200px;
+    height: 40px;
+}
+#avis-produits{
+    width: 400px;
+    height: 100px;
+    margin-top: 5%;
+    margin-left: 37%;
+    overflow: auto;
+}
+#titre-avis{
+    text-align: center;
+    margin-top: 5%;
+}
+.appercu-velo img {
+    display: inline-flex;
+    width: 300px;
+    height: 300px;
+}
+.appercu-velo span {
+    margin-left: 9%;
+    margin-bottom: 2%;
+    margin-top: 5%;
+    align-items: center;
+    text-align: center;
+    display: inline-flex;
+    width: 300px;
+    height: 300px;
+}
+#titre-market{
+    font-size: 3em;
+    font-family: Agbalumo,sans-serif;
+    text-align: center;
+    align-items: center;
 }
