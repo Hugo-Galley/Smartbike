@@ -6,6 +6,7 @@ Il s'agit d'un projet de cours ayant pour but de crée un site de vente de vélo
 * HTML
 * CSS
 * PHP
+* SQL
 
 ## Team du Projet 
 * [Hugo Galley](https://github.com/Hugo-Galley)
