@@ -229,3 +229,29 @@ box-shadow: 10px 0px 15px 4px rgba(104,82,94,0.68);
     text-align: center;
     margin-top: 10%;
 }
+.div-tri {
+    align-items: center;
+    text-align: center;
+    margin-top: 10%;
+}
+
+#titre-market {
+    font-size: 3em;
+    font-family: 'Agbalumo', sans-serif;
+    text-align: center;
+    align-items: center;
+}
+
+#form-tri {
+    margin-top: 20px;
+}
+
+#choix {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid rgb(14, 112, 197);
+    border-radius: 5px;
+    text-align: center;
+}
+
+

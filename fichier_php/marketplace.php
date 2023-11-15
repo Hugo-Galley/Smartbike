@@ -23,8 +23,8 @@
     <label for="choix">Selcetionner votre affichage</label>
     <select name="choix" id="choix">
         <option value="1">Normal</option>
-        <option value="2">Ordre Croissant</option>
-        <option value="3">Ordre Décroissant</option>
+        <option value="2">Ordre Prix Croissant</option>
+        <option value="3">Ordre Prix Décroissant</option>
         <option value="4">Orde Alphabetique</option>
         <option value="5">Ordre Anti-Alphabetique</option>
     </select>
@@ -58,9 +58,10 @@ if (isset($_POST['choix'])) {
             break;
         case '4':
             $velos = $bdd->query("SELECT * FROM velos ORDER BY nom")->fetchAll(PDO::FETCH_ASSOC);
+            break;
         case '5':
             $velos = $bdd->query("SELECT * FROM velos ORDER BY nom DESC")->fetchAll(PDO::FETCH_ASSOC);
-
+            break;
 
 
     }
