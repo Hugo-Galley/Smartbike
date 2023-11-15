@@ -6,13 +6,9 @@
     $email = $_POST["email"];
     $message = $_POST["message"];
 
-    $stmt = $bdd->prepare("INSERT INTO infos_contact (nom, prenom, message, email) VALUES (:nom, :prenom, :message, :email)");
-    $stmt->bindParam(':nom', $nom);
-    $stmt->bindParam(':prenom', $prenom);
-    $stmt->bindParam(':message', $message);
-    $stmt->bindParam(':email', $email);
+    $stmt = $bdd->prepare("INSERT INTO infos_contact (nom, prenom, message, email) VALUES (?,?,?,?)");
     
-    if($statu = $stmt->execute()){
+    if($statu = $stmt->execute([$nom, $prenom,$email, $email])){
         echo '<script type="text/javascript">
             alert("Le message a été envoyé!");
             window.location.href = "index.php";

@@ -35,7 +35,12 @@ echo "</div>";
 echo "</div>";
 echo "<h2 id='titre-avis'> Les avis que nos clients nous on laissé</h2>";
 echo "<p id='avis-produits'>" . $produits['avis'] . "</p>";
-
+echo "<h2 id='note-moye'>Note Moyenne</h2>";
+echo "<div class='etoiles'>";
+for ($i = 0; $i < $produits['note']; $i++) {
+    echo "<span class='star'>&#9733;</span>"  ;
+}
+echo "</div>";
 ?>
 
 
