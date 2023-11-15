@@ -16,12 +16,62 @@
         ?>
     </header>
     <main>
-        <h2 id='titre-market'>Nos vélos Proposé à la Vente</h2>
+        <div class='div-tri'>
+    <h2 id='titre-market'>Nos vélos Proposé à la Vente</h2>
+<form method="post" action="marketplace.php" id="form-tri">
+    <!-- Le formulaire est envoyé à "traitement.php" avec la méthode POST -->
+    <label for="choix">Selcetionner votre affichage</label>
+    <select name="choix" id="choix">
+        <option value="1">Normal</option>
+        <option value="2">Ordre Croissant</option>
+        <option value="3">Ordre Décroissant</option>
+        <option value="4">Orde Alphabetique</option>
+        <option value="5">Ordre Anti-Alphabetique</option>
+    </select>
+</form>
+</div>
+<script>
+    // Récupérer l'élément select
+    var selectElement = document.getElementById('choix');
+
+    // Ajouter un écouteur d'événements pour le changement
+    selectElement.addEventListener('change', function () {
+        // Soumettre automatiquement le formulaire lorsque le changement se produit
+        document.getElementById('form-tri').submit();
+    });
+</script>
+
         <div class="appercu-velo">
         <?php
+        
 include("bdd.php");
+if (isset($_POST['choix'])) {
+    switch ($_POST['choix']) {
+        case '1':
+            $velos = $bdd->query("SELECT * FROM velos")->fetchAll(PDO::FETCH_ASSOC);
+            break;
+        case '2':
+            $velos = $bdd->query("SELECT * FROM velos ORDER BY prix")->fetchAll(PDO::FETCH_ASSOC);
+            break;
+        case '3':
+            $velos = $bdd->query("SELECT * FROM velos ORDER BY prix DESC")->fetchAll(PDO::FETCH_ASSOC);
+            break;
+        case '4':
+            $velos = $bdd->query("SELECT * FROM velos ORDER BY nom")->fetchAll(PDO::FETCH_ASSOC);
+        case '5':
+            $velos = $bdd->query("SELECT * FROM velos ORDER BY nom DESC")->fetchAll(PDO::FETCH_ASSOC);
 
-$velos = $bdd->query("SELECT * FROM velos")->fetchAll(PDO::FETCH_ASSOC);
+
+
+    }
+
+}
+else {
+    $velos = $bdd->query("SELECT * FROM velos")->fetchAll(PDO::FETCH_ASSOC);
+
+}
+
+
 
 foreach ($velos as $velo) {
     echo '<span>';
