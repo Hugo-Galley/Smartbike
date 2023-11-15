@@ -1,7 +1,6 @@
 body{
     font-family: 'Roboto Mono', monospace;
-    background:linear-gradient(90deg, rgba(183,181,215,1) 0%, rgba(255,255,255,1) 100%, rgba(0,212,255,1) 100%);
-}
+    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(126,181,204,0.9094012605042017) 100%);}
 #logo{
     width: 10%;
     height: 10%;
@@ -174,20 +173,42 @@ box-shadow: 10px 0px 15px 4px rgba(104,82,94,0.68);
     display: inline-flex;
     width: 300px;
     height: 300px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
 }
 .appercu-velo span {
     margin-left: 9%;
-    margin-bottom: 2%;
+    margin-bottom: 5%;
     margin-top: 5%;
     align-items: center;
     text-align: center;
     display: inline-flex;
+    border-radius: 20px;
     width: 300px;
     height: 300px;
+}
+
+#info-market-velo{
+    background:black ;
+    color: aliceblue;
+    border-radius: 20px;
 }
 #titre-market{
     font-size: 3em;
     font-family: Agbalumo,sans-serif;
     text-align: center;
     align-items: center;
+}
+#info-market-velo:hover{
+    border: 2px solid rgb(14, 112, 197);
+    border-radius: 5px;
+    border-radius:20px;
+    text-align: center;
+    -webkit-box-shadow: 10px 0px 15px 4px rgba(104,82,94,0.68); 
+box-shadow: 10px 0px 15px 4px rgba(104,82,94,0.68);
+}
+#info-velo:hover {
+    background: #0056b3;
+    border-radius: 5px;
+
 }

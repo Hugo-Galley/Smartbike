@@ -16,7 +16,7 @@
     $statu = $stmt->execute();
     echo '<script type="text/javascript">
             alert("Le message a été envoyé!");
-            window.location.href = "commander.php";
+            window.location.href = "index.php";
           </script>';
     }
     catch(PDOException $e){

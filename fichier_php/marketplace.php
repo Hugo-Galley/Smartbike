@@ -16,7 +16,7 @@
         ?>
     </header>
     <main>
-        <h2 id='titre-market'>Nos vélos Prposé à la Vente</h2>
+        <h2 id='titre-market'>Nos vélos Proposé à la Vente</h2>
         <div class="appercu-velo">
         <?php
 include("bdd.php");
@@ -25,10 +25,10 @@ $velos = $bdd->query("SELECT * FROM velos")->fetchAll(PDO::FETCH_ASSOC);
 
 foreach ($velos as $velo) {
     echo '<span>';
-    echo '<a href="page-produits.php?id_velos=' . $velo['id_velos'] . '">';
+    echo '<a href="page-produits.php?id_velos=' . $velo['id_velos'] . '" id="info-market-velo">';
     echo '<img src="' . $velo['photo_url'] . '" alt="Photo de vélo">';
-    echo '<p>'.$velo['nom'].'</p>';
-    echo '<p>'.$velo['prix'].'</p>';
+    echo "<p id='info-velo'>".$velo['nom'].'</p>';
+    echo "<p id='info-velo'>".$velo['prix']."</p>";
     echo '</a>';
     echo '</span>';
 }
