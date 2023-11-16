@@ -112,6 +112,14 @@ iframe{
     display: flex;
     margin-top: 5%;
 }
+.photo-prod{
+    display: inline-block;
+    width: 40%;
+    height: 40%;
+    align-items: center;
+    text-align: center;
+    margin-left: 15%;
+}
 
 #photo-produits {
     -webkit-box-shadow: 10px 0px 15px 4px rgba(104, 82, 94, 0.68);

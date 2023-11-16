@@ -7,6 +7,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Agbalumo&family=Roboto+Mono:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script type="text/javascript" src="../script.js"></script>
+
     <title>Produits</title>
 </head>
 <body>
@@ -25,7 +31,11 @@ $produits = $bdd->query("SELECT * FROM velos WHERE id_velos = $choice")->fetch(P
 // Vos lignes de code PHP pour récupérer les données ici...
 
 echo "<div class='produit-container'>";
+echo "<div class='photo-prod'>";
 echo "<img src='" . $produits['photo_url'] . "' alt='photo du produit' id='photo-produits'>";
+echo "<img src='" . $produits['photo_url_2'] . "' alt='photo du produit' id='photo-produits'>";
+echo "<img src='" . $produits['photo_url_3'] . "' alt='photo du produit' id='photo-produits'>";
+echo "</div>";
 echo "<div id='descriptif'>";
 echo "<span id='titre-produits'><p>" . $produits['nom'] . "</p></span>";
 echo "<h2 id='prix-produits'>" . $produits['prix'] . "€</h2>";
