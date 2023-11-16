@@ -18,7 +18,7 @@ nav li {
     color: black;
     text-decoration: none;
     margin-left: 20px;
-}
+} 
 a {
     text-decoration: none;
     color: black;
@@ -38,20 +38,19 @@ header{
 box-shadow: 10px 0px 15px 4px rgba(104,82,94,0.68);
 }
 .presentation{
-
-    display: flex;
-    text-align: center;
-    align-items: center;
+    margin-left: 23%;
+    width: 50%;
+    height: 5%;
 }
-#velo1{
-    width: 40%;
-    height: 40%;
-    margin-left: 12%;
-
+.presentation img{
+    display: inline-block;
+    width: 300px;
+    height: 500px;
 }
+
 #pres-text{
-    width: 35%;
-    margin-left: 5%;
+    width: 60%;
+    margin-left: 20%;
 }
 form {
     max-width: 400px;
