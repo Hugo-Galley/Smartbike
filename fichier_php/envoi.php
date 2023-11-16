@@ -7,7 +7,7 @@
     $email = $_POST["email"];
     $message = $_POST["message"];
 
-    $stmt = $bdd->prepare("INSERT INTO commandes (velos_id, nom, prenom, email,message) VALUES (:velos_id,:nom, :prenom, :email, :message)");
+    $stmt = $bdd->prepare("INSERT INTO commandes (velos_id, nom, prenom, email,message) VALUES (?,?,?,?,?)");
 
     $statu = $stmt->execute([$id,$nom, $prenom, $message, $email,]);
     echo '<script type="text/javascript">

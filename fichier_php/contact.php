@@ -14,7 +14,7 @@
 <body>
     <header>
         <?php
-        include("header.php");
+        require_once("header.php");
         ?>
     </header>
     <main ' class="contact">

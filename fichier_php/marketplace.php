@@ -12,7 +12,7 @@
 <body>
     <header>
     <?php
-        include("header.php");
+        require_once("header.php");
         ?>
     </header>
     <main>
@@ -27,6 +27,7 @@
         <option value="3">Ordre Prix Décroissant</option>
         <option value="4">Orde Alphabetique</option>
         <option value="5">Ordre Anti-Alphabetique</option>
+        <option value="6">Les mieux notés</option>
     </select>
 </form>
 </div>
@@ -62,6 +63,11 @@ if (isset($_POST['choix'])) {
         case '5':
             $velos = $bdd->query("SELECT * FROM velos ORDER BY nom DESC")->fetchAll(PDO::FETCH_ASSOC);
             break;
+        
+        case '6' : 
+            $velos = $bdd->query("SELECT * FROM velos ORDER BY note DESC ")->fetchAll(PDO::FETCH_ASSOC);
+            break;  
+
 
 
     }
