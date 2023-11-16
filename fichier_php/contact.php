@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../scripts_annexe/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Agbalumo&family=Roboto+Mono:wght@500&display=swap" rel="stylesheet">
@@ -14,12 +14,12 @@
 <body>
     <header>
         <?php
-        include("header.php");
+        require_once("header.php");
         ?>
     </header>
     <main ' class="contact">
         <div id="contact-page">
-            <form action="envoi-cont.php" method='post'>
+            <form action="envoie-bdd.php" method='post'>
                 <div class="form-group">
                     <label for="nom">Nom :</label>
                     <input type="text" name="nom" id="nom">
@@ -36,6 +36,7 @@
                     <label for="message">Message :</label>
                     <textarea name="message" id="message"></textarea>
                 </div>
+                <input type="hidden" name="id" value="contact">
                 <button type="submit">Envoyer</button>
             </form>
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2623.469044703131!2d2.235470476658105!3d48.88739757133607!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e6651cdd16e75f%3A0x56c8c47a267e44f1!2sLA%20DEFENSE%2C%2020%20BIS%20Jardins%20Boieldieu%2C%2092800%20Puteaux!5e0!3m2!1sfr!2sfr!4v1699875144086!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>

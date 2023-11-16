@@ -18,7 +18,7 @@ nav li {
     color: black;
     text-decoration: none;
     margin-left: 20px;
-}
+} 
 a {
     text-decoration: none;
     color: black;
@@ -27,6 +27,8 @@ a {
     font-size: 4em;
 }
 header{
+    margin: 0;
+    padding: 0;
     border: 4px solid black;
     background-color: aliceblue;
     border-radius: 5px;
@@ -36,20 +38,19 @@ header{
 box-shadow: 10px 0px 15px 4px rgba(104,82,94,0.68);
 }
 .presentation{
-
-    display: flex;
-    text-align: center;
-    align-items: center;
+    margin-left: 23%;
+    width: 50%;
+    height: 5%;
 }
-#velo1{
-    width: 40%;
-    height: 40%;
-    margin-left: 12%;
-
+.presentation img{
+    display: inline-block;
+    width: 300px;
+    height: 500px;
 }
+
 #pres-text{
-    width: 35%;
-    margin-left: 5%;
+    width: 60%;
+    margin-left: 20%;
 }
 form {
     max-width: 400px;
@@ -110,6 +111,14 @@ iframe{
 .produit-container {
     display: flex;
     margin-top: 5%;
+}
+.photo-prod{
+    display: inline-block;
+    width: 40%;
+    height: 40%;
+    align-items: center;
+    text-align: center;
+    margin-left: 15%;
 }
 
 #photo-produits {
@@ -222,3 +231,34 @@ box-shadow: 10px 0px 15px 4px rgba(104,82,94,0.68);
     text-align: center;
     align-items: center;
   }
+.div-tri{
+    align-items: center;
+    text-align: center;
+    margin-top: 10%;
+}
+.div-tri {
+    align-items: center;
+    text-align: center;
+    margin-top: 10%;
+}
+
+#titre-market {
+    font-size: 3em;
+    font-family: 'Agbalumo', sans-serif;
+    text-align: center;
+    align-items: center;
+}
+
+#form-tri {
+    margin-top: 20px;
+}
+
+#choix {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid rgb(14, 112, 197);
+    border-radius: 5px;
+    text-align: center;
+}
+
+

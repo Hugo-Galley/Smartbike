@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="../style.css">
+<link rel="stylesheet" href="style.css">
 <a href="index.php"><img src="../items/logo.png" alt="logo site" id="logo"></a>
         <nav>
             <ul>

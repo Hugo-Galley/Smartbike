@@ -9,13 +9,14 @@
 <body>
     <main>
         <h2>Page Admin</h2>
-        <form action="fichier_php/ajout-velo.php" method="post">
+        <form action="fichier_php/envoie-bdd.php" method="post">
             <label>Nom :<input type="text" name="nom"></label>
             <label>Url de la photo:<input type="text" name="url"></label>
             <label>Prix :<input type="text" name="prix"></label>
             <label>Description : <textarea name="description"></textarea></label>
             <label>Avis : <textarea name="avis"></textarea></label>
             <label>Nombre d'étoiles :<input type="number" name="etoiles"></label>
+            <input type="hidden" name="id" value="ajout-velo">
 
             <button type="submit">Ajouter</button>
 
