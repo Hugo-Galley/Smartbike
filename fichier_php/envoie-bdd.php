@@ -1,4 +1,5 @@
 <?php
+include('bdd.php');
 switch($_POST['id']){
     case 'contact' :
         try{
@@ -50,14 +51,16 @@ switch($_POST['id']){
     case 'ajout-velo':
             $nom = $_POST['nom'];
             $url = $_POST['url'];
+            $url_2 = $_POST['url_2'];
+            $url_3 = $_POST['url_3'];
             $prix = $_POST['prix'];
             $description = $_POST['description'];
             $avis = $_POST['avis'];
             $etoiles = $_POST['etoiles'];
 
-            $new_velo = $bdd->prepare('INSERT INTO velos (nom,description,prix,photo_url,avis,note) VALUES (?,?,?,?,?,?)');
+            $new_velo = $bdd->prepare('INSERT INTO velos (nom,description,prix,photo_url,photo_url_2,photo_url_3,avis,note) VALUES (?,?,?,?,?,?,?,?)');
 
-            if($new_velo->execute([$nom, $description,$prix, $url, $avis,$etoiles])){
+            if($new_velo->execute([$nom, $description,$prix, $url,$url_2,$url_3, $avis,$etoiles])){
                 echo '<script type="text/javascript">
                     alert("Le message a été envoyé!");
                     window.location.href = "marketplace.php";
