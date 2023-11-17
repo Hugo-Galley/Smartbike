@@ -8,7 +8,7 @@ $velo = $bdd->query("SELECT * FROM velos")->fetchAll();
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="../style.css">
+    <link rel="stylesheet" href="../scripts_annexe/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Agbalumo&family=Roboto+Mono:wght@500&display=swap" rel="stylesheet">  
@@ -16,7 +16,7 @@ $velo = $bdd->query("SELECT * FROM velos")->fetchAll();
 <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
 <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-    <script type="text/javascript" src="../script.js"></script>
+    <script type="text/javascript" src="../scripts_annexe/script.js"></script>
 
     <title>Acceuil</title>
 </head>

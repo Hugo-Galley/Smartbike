@@ -11,7 +11,7 @@ $velos = $bdd->query("SELECT nom FROM velos")->fetchAll();
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Commander - Smartbike</title>
-    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../scripts_annexe/style.css">
 </head>
 <header>
         
@@ -22,7 +22,7 @@ $velos = $bdd->query("SELECT nom FROM velos")->fetchAll();
     <section>
         <h1>Commander votre vélo</h1>
 
-        <form action="envoi.php" method="post">
+        <form action="envoie-bdd.php" method="post">
             <label for="velo">Sélectionnez un vélo :</label>
             <select name="velos_id">
                 <?php foreach ($velos as $velo): ?>
@@ -41,6 +41,7 @@ $velos = $bdd->query("SELECT nom FROM velos")->fetchAll();
 
             <label for="message">Message :</label>
             <textarea id="message" name="message" rows="4" required></textarea>
+            <input type="hidden" name="id" value="commande">
 
             <button type="submit">Envoyer</button>
         </form>
