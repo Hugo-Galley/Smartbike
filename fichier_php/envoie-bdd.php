@@ -10,7 +10,7 @@ switch($_POST['id']){
         
             $stmt = $bdd->prepare("INSERT INTO infos_contact (nom, prenom, message, email) VALUES (?,?,?,?)");
             
-            if($statu = $stmt->execute([$nom, $prenom,$email, $email])){
+            if($stmt->execute([$nom, $prenom,$message, $email])){
                 echo '<script type="text/javascript">
                     alert("Le message a été envoyé!");
                     window.location.href = "index.php";
