@@ -35,7 +35,7 @@ $velo = $bdd->query("SELECT * FROM velos")->fetchAll();
           echo '<img src="' . $imageVelo['photo_url'] . '" alt="image velo 1">';
         }
         ?>
-  </div>
+        </div>
   <p id="pres-text">Bienvenue sur le site de Smartbike, l'entreprise innovante dédiée à la création de solutions de mobilité électrique. Nous sommes fiers de vous présenter notre dernier bijou technologique, le vélo électrique révolutionnaire "Bike5". Chez Smartbike, nous nous engageons à repousser les limites de l'innovation en proposant des alternatives de transport écologiques, durables et élégantes. Explorez notre gamme diversifiée de vélos électriques, comprenant le modèle emblématique "BikeOne", le tout-terrain performant "Bike22" et le modèle phare "BikeFirst". Notre site est conçu pour vous offrir une expérience immersive, où vous pourrez découvrir les caractéristiques uniques de chaque vélo, en apprendre davantage sur notre entreprise et même trouver des conseils d'experts pour choisir le modèle qui correspond le mieux à vos besoins. Rejoignez la révolution de la mobilité électrique avec Smartbike et embarquez pour un avenir plus vert et plus dynamique.</p>
 
 

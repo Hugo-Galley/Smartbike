@@ -58,22 +58,22 @@ header{
     border-top-left-radius: 20px;
     border-bottom-right-radius: 20px;
     -webkit-box-shadow: 10px 0px 15px 4px rgba(104,82,94,0.68); 
-box-shadow: 10px 0px 15px 4px rgba(104,82,94,0.68);
+    box-shadow: 10px 0px 15px 4px rgba(104,82,94,0.68);
 }
 .presentation{
-    margin-left: 23%;
+    margin: auto;
     width: 50%;
     height: 5%;
 }
 .presentation img{
-    display: inline-block;
     width: 300px;
     height: 500px;
 }
 
 #pres-text{
     width: 60%;
-    margin-left: 20%;
+    text-align: center;
+    margin: auto;
 }
 form {
     max-width: 400px;
@@ -133,7 +133,7 @@ iframe{
 }
 .produit-container {
     display: flex;
-    margin-top: 5%;
+    margin: auto;
 }
 .photo-prod{
     display: inline-block;
