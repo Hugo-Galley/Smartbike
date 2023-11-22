@@ -1,6 +1,10 @@
+
 body{
     font-family: 'Roboto Mono', monospace;
-    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(126,181,204,0.9094012605042017) 100%);}
+    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(126,181,204,0.9094012605042017) 100%);
+    font-size: calc(0.2rem + 1.5vw);
+}
+    
 #logo{
     width: 10%;
     height: 10%;
@@ -10,6 +14,7 @@ nav {
     display: flex;
     margin-right: 2%;
     margin-top: 1%;
+    font-size: calc(0.2rem + 1.5vw);
 }
 
 nav li {
@@ -187,13 +192,24 @@ box-shadow: 10px 0px 15px 4px rgba(104,82,94,0.68);
     text-align: center;
     margin-top: 5%;
 }
+.conteneur-velos {
+    display: flex;
+    justify-content: space-around; 
+    flex-wrap: wrap; 
+    max-width: 100%; 
+}
+
+.appercu-velo {
+    margin: 20px;
+}
+
 .appercu-velo img {
-    display: inline-flex;
     width: 300px;
     height: 300px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
 }
+
 .appercu-velo span {
     margin-left: 9%;
     margin-bottom: 5%;
@@ -268,5 +284,69 @@ box-shadow: 10px 0px 15px 4px rgba(104,82,94,0.68);
     border-radius: 5px;
     text-align: center;
 }
+#icons {
+    cursor: pointer;
+    display: none;
+  }
+  @media only screen and (max-width: 768px) {
+    
+    #icons:before {
+        content: "\2618";
+    }
 
+    nav ul {
+        border-top-left-radius: 10px;
+        display: flex;
+        position: fixed;
+        right: -100%;
+        top: 10%;
+        flex-direction: column;
+        background: white;
+        width: 100%;
+        text-align: center;
+        transition: 0.25s ease-in-out;
+        padding-left: 30px; 
+    }
+    
+    nav ul::before {
+        content: "\2630"; 
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 10px; 
+        font-size: 20px; 
+        color: #333; 
+    }
+    
+    nav li {
+        padding: 3px 0;
+    }
+    
+    nav li:hover {
+        background: rgb(157, 217, 240);
+    }
+    
+    nav ul:hover {
+        right: 0;
+        width: 20%;
+    }
+   
+        /* Vos autres styles pour les écrans plus petits */
+    
+        .appercu-velo img {
+            width: 150px;
+            height: 150px;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+        }
 
+        .appercu-velo span {
+            width: calc(50% - 20px); /* Ajuster la largeur */
+            height: auto;
+            margin: 30px; /* Ajouter une marge pour l'espacement */
+        }
+    
+        .appercu-velo span {
+            margin: 10px; /* Vous pouvez également réajuster la marge ici si nécessaire */
+        }
+    }

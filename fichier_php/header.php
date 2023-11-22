@@ -1,6 +1,7 @@
 <link rel="stylesheet" href="style.css">
 <a href="index.php"><img src="../items/logo.png" alt="logo site" id="logo"></a>
         <nav>
+            <div id="icons"></div>
             <ul>
                 <li><a href="marketplace.php">Nos vélos</a></li>
                 <li><a href="contact.php">Contact</a></li>
