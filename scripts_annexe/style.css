@@ -199,9 +199,6 @@ box-shadow: 10px 0px 15px 4px rgba(104,82,94,0.68);
     max-width: 100%; 
 }
 
-.appercu-velo {
-    margin: 20px;
-}
 
 .appercu-velo img {
     width: 300px;
@@ -211,15 +208,14 @@ box-shadow: 10px 0px 15px 4px rgba(104,82,94,0.68);
 }
 
 .appercu-velo span {
-    margin-left: 9%;
-    margin-bottom: 5%;
+    margin-left: 10%;
     margin-top: 5%;
     align-items: center;
     text-align: center;
     display: inline-flex;
     border-radius: 20px;
-    width: 300px;
-    height: 300px;
+    width: auto;
+    height: auto;
 }
 
 #info-market-velo{
@@ -276,7 +272,6 @@ box-shadow: 10px 0px 15px 4px rgba(104,82,94,0.68);
 #form-tri {
     margin-top: 20px;
 }
-
 #choix {
     width: 100%;
     padding: 10px;
@@ -287,6 +282,82 @@ box-shadow: 10px 0px 15px 4px rgba(104,82,94,0.68);
 #icons {
     cursor: pointer;
     display: none;
+  }
+@media only screen and (max-width: 850px){
+
+    .appercu-velo span {
+        margin-left: 18%;
+        align-items: center;
+        text-align: center;
+        display: inline-flex;
+        border-radius: 20px;
+        width: auto;
+        height: auto;
+    }
+    
+}
+footer {
+    margin-top: 30px;
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    border-radius: 20px;
+    align-items: center;
+    text-align: center;
+  }
+  .info-footer{
+    display: flex;
+    flex-direction: column;
+    float: right;
+
+  }
+footer a{
+    color: wheat;
+}
+  .h1footer {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+
+  .pfooter {
+    font-size: 16px;
+    margin: 5px 0;
+    
+  }
+
+  .footer-buttons {
+    float: left;
+    display: flex;
+    flex-direction: column;
+    
+  }
+
+  .bfooter {
+    background-color: #555;
+    color: #fff;
+    padding: 10px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .footer-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-image img {
+    max-width: 50px;
+    height: auto;
+  }
+  .tout-foot{
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    align-items: center;
   }
   @media only screen and (max-width: 768px) {
     
@@ -334,19 +405,23 @@ box-shadow: 10px 0px 15px 4px rgba(104,82,94,0.68);
         /* Vos autres styles pour les écrans plus petits */
     
         .appercu-velo img {
-            width: 150px;
-            height: 150px;
+            width: 300px;
+            height: 300px;
             border-top-left-radius: 20px;
             border-top-right-radius: 20px;
         }
-
-        .appercu-velo span {
-            width: calc(50% - 20px); /* Ajuster la largeur */
-            height: auto;
-            margin: 30px; /* Ajouter une marge pour l'espacement */
+        
+        .presentation img{
+            width: 100px;
+            height: 200px;
         }
-    
-        .appercu-velo span {
-            margin: 10px; /* Vous pouvez également réajuster la marge ici si nécessaire */
+        #pres-text{
+            width: 100%;
+
+        }
+        .appercu-velo{
+            display: flex;
+            flex-direction: column;
+            margin-right: 10%
         }
     }

@@ -36,6 +36,10 @@
         <p>Chez SmartBike, nous nous engageons à donner le meilleurs produit possible. Nous proposons une variété des vélos pour tout les profils].</p>
     </section>
     <a href="https://youtu.be/SGUQIuSwi3I?si=eLnJn0sUG03oRrDg" id='easteregs'>🤌</a>
-
+    <footer>
+        <?php
+            require_once("footer.php")
+        ?>
+    </footer>
 </body>
 </html>

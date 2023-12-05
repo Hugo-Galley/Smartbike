@@ -46,6 +46,10 @@ $velos = $bdd->query("SELECT nom FROM velos")->fetchAll();
             <button type="submit">Envoyer</button>
         </form>
     </section>
-
+    <footer>
+        <?php
+            require_once("footer.php")
+        ?>
+    </footer>
 </body> 
 </html>

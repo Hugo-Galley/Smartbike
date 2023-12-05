@@ -40,5 +40,10 @@ $velo = $bdd->query("SELECT * FROM velos")->fetchAll();
 
 
     </main>
+    <footer>
+        <?php
+            require_once("footer.php")
+        ?>
+    </footer>
 </body>
 </html>

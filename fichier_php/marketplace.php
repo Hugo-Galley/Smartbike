@@ -19,7 +19,6 @@
         <div class='div-tri'>
     <h2 id='titre-market'>Nos vélos Proposé à la Vente</h2>
 <form method="post" action="marketplace.php" id="form-tri">
-    <!-- Le formulaire est envoyé à "traitement.php" avec la méthode POST -->
     <label for="choix">Selcetionner votre affichage</label>
     <select name="choix" id="choix">
         <option value="1">Normal</option>
@@ -81,7 +80,7 @@ else {
 
 
 foreach ($velos as $velo) {
-    echo '<span>';
+    echo "<span id='info-velo-marketplace'>";
     echo '<a href="page-produits.php?id_velos=' . $velo['id_velos'] . '" id="info-market-velo">';
     echo '<img src="' . $velo['photo_url'] . '" alt="Photo de vélo">';
     echo "<p id='info-velo'>".$velo['nom'].'</p>';
@@ -93,5 +92,10 @@ foreach ($velos as $velo) {
 
         </div>
     </main>
+    <footer>
+        <?php
+            require_once("footer.php")
+        ?>
+    </footer>
 </body>
 </html>

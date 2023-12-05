@@ -56,5 +56,10 @@ echo "</div>";
 
 
     </main>
+    <footer>
+        <?php
+            require_once("footer.php")
+        ?>
+    </footer>
 </body>
 </html>
