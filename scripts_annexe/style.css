@@ -1,8 +1,10 @@
 
 body{
     font-family: 'Roboto Mono', monospace;
-    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(126,181,204,0.9094012605042017) 100%);
+    background: #555;
+    /* background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(126,181,204,0.9094012605042017) 100%); */
     font-size: calc(0.2rem + 1.5vw);
+    color: white;
 }
     
 #logo{
@@ -142,11 +144,12 @@ iframe{
 }
 .photo-prod{
     display: inline-block;
-    width: 40%;
-    height: 40%;
+    width: 80%;
+    height: 80%;
     align-items: center;
     text-align: center;
     margin-left: 15%;
+    margin-top: 20%;
 }
 
 #photo-produits {
@@ -162,6 +165,7 @@ iframe{
 
     display: inline-flex;
     flex-direction: column;
+    margin-top: 4%;
     margin-left: 5%;
 }
 #titre-produits,#prix-produits,#description-produits
@@ -296,69 +300,71 @@ box-shadow: 10px 0px 15px 4px rgba(104,82,94,0.68);
     }
     
 }
+/* styles.css */
+
 footer {
-    margin-top: 30px;
     background-color: #333;
-    color: #fff;
+    color: white;
     padding: 20px;
-    display: flex;
-    border-radius: 20px;
-    align-items: center;
     text-align: center;
-  }
-  .info-footer{
-    display: flex;
-    flex-direction: column;
-    float: right;
-
-  }
-footer a{
-    color: wheat;
 }
-  .h1footer {
-    font-size: 24px;
-    margin-bottom: 10px;
-  }
 
-  .pfooter {
-    font-size: 16px;
-    margin: 5px 0;
-    
-  }
+.tout-foot {
+    max-width: 1200px;
+    margin: 0 auto;
+}
 
-  .footer-buttons {
-    float: left;
+
+
+.footer-buttons {
     display: flex;
-    flex-direction: column;
-    
-  }
+    justify-content: space-around;
+    align-items: flex-end; 
+    margin-top: auto; 
+}
 
-  .bfooter {
-    background-color: #555;
-    color: #fff;
-    padding: 10px;
-    margin: 5px;
+.bfooter {
+    background-color: #4CAF50;
     border: none;
-    border-radius: 5px;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 0.5em;
     cursor: pointer;
-  }
+}
 
-  .footer-info {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
+.info-footer {
+    margin-top: 20px;
+}
 
-  .footer-image img {
-    max-width: 50px;
-    height: auto;
-  }
-  .tout-foot{
-    display: flex;
-    flex-direction: row;
-    margin: auto;
-    align-items: center;
-  }
+
+.h1footer {
+    font-size: 2em;
+    color: #4CAF50;
+}
+
+.pfooter {
+    font-size: 1em;
+    color: #ddd;
+    margin: 5px 0;
+}
+
+.footer-image {
+    margin-top: 20px;
+}
+
+.footer-image img {
+    width: 50px; /* ajustez la taille selon vos besoins */
+}
+/* Ajoutez ces styles CSS à votre fichier existant */
+
+.map-iframe {
+    
+    display: block;
+    margin: 0 auto;
+}
+
+
   @media only screen and (max-width: 768px) {
     
     #icons:before {
@@ -423,5 +429,11 @@ footer a{
             display: flex;
             flex-direction: column;
             margin-right: 10%
+        }
+        .map-iframe {
+            width: 400px;
+            height: 100px;
+            display: block;
+            margin: 0 auto;
         }
     }
